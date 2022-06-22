@@ -1,0 +1,11 @@
+Data from Merritt et al. 2016
+-----------------------------
+Observatory	t (days)	kTeff (eV)	kTeff_err
+CXO		65.1		104.6		1.3		
+XMM		235.7		89.5		1.03
+CXO		751.6		76.4		1.8
+CXO		929.5		73.8		1.9
+XMM		1500.5		71.7		1.4
+CXO		1582.9		70.3		1.9
+CXO		3039.7		64.5		1.8
+CXO		5312.1		64.4		1.2
