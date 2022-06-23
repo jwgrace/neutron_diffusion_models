@@ -52,13 +52,21 @@
     lgP_min_heating_shallow = 27.0
     lgP_max_heating_shallow = 28.0
     
+    lgP_min_heating_outer = 26.86
+    lgP_max_heating_outer = 29.77
+    
+    Q_heating_outer = 0.3 ! MeV
+    lgP_min_heating_inner = 29.90
+    lgP_max_heating_inner = 30.00
+    
+    
     ! shell Urca cooling
     turn_on_shell_Urca = .FALSE.
     
     which_neutron_1S0_gap = 'sfb03'
     
     ! atmosphere composition
-    lg_atm_light_element_column = 4.0
+    lg_atm_light_element_column = 8.0
     
     ! impurities
     fix_Qimp = .TRUE.
