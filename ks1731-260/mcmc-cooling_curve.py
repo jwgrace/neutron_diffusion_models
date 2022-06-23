@@ -48,7 +48,7 @@ except getopt.error as err:
     print (str(err))
 
 def log_probability(parameter_values, Q_heating_inner=1.5,
-                    parameter_minimum_values=np.array([8.35e7, 0.0, 0.0]),
+                    parameter_minimum_values=np.array([8.35e6, 0.0, 0.0]),
                     parameter_maximum_values=np.array([9.35e8, 20.0, 20.0])):
     '''
     Calculates the log of the probability of a model with dStar model
