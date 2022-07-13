@@ -104,6 +104,7 @@ def log_probability(parameter_values, Q_heating_inner=1.5,
         core_temperature = str(parameter_values[0])
         Qimp = str(parameter_values[1])
         Q_heating_shallow = str(parameter_values[2])
+        Q_heating_inner = str(Q_heating_inner)
         # Try to run the dStar model which calculates and outputs the chi2.
         # If the model can't run or if the chi2 is too high, it won't produce
         # output that can be converted to a float and will return an error.
@@ -131,7 +132,7 @@ backend = emcee.backends.HDFBackend(h5_filename)
 backend.reset(nwalkers, ndim)
 
 with Pool() as pool:
-    sampler = emcee.EnsembleSampler(nwalkers, ndim, log_probability, kwargs=(Q_heating_inner=Q_heating_inner), pool=pool, backend=backend)
+    sampler = emcee.EnsembleSampler(nwalkers, ndim, log_probability, kwargs={'Q_heating_inner':Q_heating_inner}, pool=pool, backend=backend)
     #sampler.run_mcmc(pos, max_steps, progress=True)
 
     # This will be useful to testing convergence
